@@ -24,8 +24,8 @@ const authRoutes = require('./routes/authRoutes');
 const blogRoutes = require('./routes/blogRoutes');
 
 // Register routes
-app.use('/auth', authRoutes);
-app.use('/blogs', blogRoutes);
+app.use('', authRoutes);
+app.use('', blogRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
